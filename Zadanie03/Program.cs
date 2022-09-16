@@ -5,16 +5,16 @@ Console.WriteLine("Придумайте целое число и введите 
 
 int numA = int.Parse(Console.ReadLine()!);
 
-if (numA == 0)
+if (numA <= 0)
 {
-    Console.WriteLine($"Вы ввели число 0, попробуйте что-нибудь другое");
+    Console.WriteLine($"Вы ввели отрицательное число либо число 0, попробуйте что-нибудь другое");
 
 }
-else if (numA > 0)
+else 
 {
 
     Console.WriteLine($"По условию задачи мы должны разложить это число {numA} на составляющие и возвести в куб каждую составляющую");
-    Console.WriteLine($"Количество составляющих у нас {numA} и их куб равен: ");
+    Console.WriteLine($"Количество составляющих у нас {numA} и куб каждой равен: ");
 
     for (int i = 1; i <= numA; i++)
 
